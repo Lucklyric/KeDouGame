@@ -54,6 +54,7 @@ class Event
                                 'life'                => 1,
                                 'name'           => isset($message_data['name']) ? $message_data['name'] : 'Guest.'.$client_id,
                                 'authorized'  => false,
+                                'sex' => $message_data['sex'],
                                 )
                         ));
                 return;

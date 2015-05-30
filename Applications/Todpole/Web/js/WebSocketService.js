@@ -48,9 +48,12 @@ var WebSocketService = function(model, webSocket) {
 			tadpole.targetY = data.y;
 		}
 		
+		
+		
 		tadpole.angle = data.angle;
 		tadpole.momentum = data.momentum;
 		tadpole.sex = data.sex;
+		console.log(data.id+" "+data.sex+" "+data);
 		
 		tadpole.timeSinceLastServerUpdate = 0;
 	}
@@ -100,12 +103,15 @@ var WebSocketService = function(model, webSocket) {
 			y: tadpole.y.toFixed(1),
 			angle: tadpole.angle.toFixed(3),
 			momentum: tadpole.momentum.toFixed(3),
-			sex:tadpole.sex
+			
 		};
 		
 		if(tadpole.name) {
 			sendObj['name'] = tadpole.name;
 		}
+		
+		sendObj['sex'] = tadpole.sex;
+		console.log(sendObj['sex']);
 		
 		webSocket.send(JSON.stringify(sendObj));
 	}
