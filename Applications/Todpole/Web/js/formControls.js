@@ -14,13 +14,15 @@
 			input.css("opacity","0");
 			messagePointer = messageHistory.length;
 			input.val('');
-			chatText.text('')
+			chatText.text('');
 		}
 
 		var updateDimensions = function(){
 			chatText.text(input.val());
-			var width = chatText.width() + 30;
+			var width = chatText.width() + 40;
+			var height = chatText.height() +10;
 			input.css({
+				height : height,
 				width: width,
 				marginLeft: (width/2)*-1
 			});

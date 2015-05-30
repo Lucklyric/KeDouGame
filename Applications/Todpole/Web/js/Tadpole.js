@@ -4,7 +4,7 @@ var Tadpole = function() {
 	this.x = Math.random() * 300 - 150;
 	this.y = Math.random() * 300 - 150;
 	this.size = 4;
-	
+	this.sex = 0;
 	this.name = '';
 	this.age = 0;
 	
@@ -119,8 +119,11 @@ var Tadpole = function() {
 			// context.shadowColor   = 'rgba(249, 136, 119, '+opacity*0.7+')';
 		}
 		else {
-			context.fillStyle = 'rgba(237, 62, 209,'+opacity+')';
-			//context.fillStyle = 'rgba(226,219,226,'+opacity+')';
+			if(this.sex == 1){
+				context.fillStyle = 'rgba(237, 62, 209,'+opacity+')';
+			}else{
+				context.fillStyle = 'rgba(226,219,226,'+opacity+')';
+			}
 		}
 		
 		context.shadowOffsetX = 0;

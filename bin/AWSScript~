@@ -1,0 +1,5 @@
+#!/bin/bash
+# My first script
+
+sudo ssh -i KeDouServer.pem ubuntu@52.24.248.212
+

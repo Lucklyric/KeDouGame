@@ -10,6 +10,25 @@ var runLoop = function() {
 	app.update();
 	app.draw();
 }
+
+var welcomModal = function(){
+	$('#myModal').modal('show');
+	$(document).on("click", "#welcomConfirm", function () {
+	 	app.initSocket();
+		setInterval(runLoop,30);
+		app.sendMessage("name:"+$("#nickName").val());
+		var radioValue = $("input[name='sex']:checked").val();
+		console.log(radioValue);
+            if(radioValue == "rMale"){
+                app.setUserSex(0);
+            }else{
+				app.setUserSex(1);
+			}
+        });
+	runLoop();
+}
+
+
 var initApp = function() {
 	if (app!=null) { return; }
 	app = new App(settings, document.getElementById('canvas'));
@@ -28,7 +47,8 @@ var initApp = function() {
 	document.addEventListener('keydown',    app.keydown, false);
 	document.addEventListener('keyup',    app.keyup, false);
 	
-	setInterval(runLoop,30);
+	welcomModal();
+	//
 }
 
 var forceInit = function() {
@@ -39,6 +59,7 @@ var forceInit = function() {
 
 if(Modernizr.canvas && Modernizr.websockets) {
 	initApp();
+	//welcomeModal();
 } else {
 	document.getElementById('unsupported-browser').style.display = "block";	
 	document.getElementById('force-init-button').addEventListener('click', forceInit, false);

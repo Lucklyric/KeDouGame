@@ -13,6 +13,12 @@ var App = function(aSettings, aCanvas) {
 			messageQuota = 5
 	;
 	
+	
+	
+	app.setUserSex = function(sex){
+		model.userTadpole.sex = sex;
+	};
+	
 	app.update = function() {
 	  if (messageQuota < 5 && model.userTadpole.age % 50 == 0) { messageQuota++; }
 	  
@@ -229,8 +235,19 @@ var App = function(aSettings, aCanvas) {
 		canvas.height = window.innerHeight;
 	};
 	
+	
+	 app.initSocket = function(){
+		webSocket 				= new WebSocket( model.settings.socketServer );
+		webSocket.onopen 		= app.onSocketOpen;
+		webSocket.onclose		= app.onSocketClose;
+		webSocket.onmessage 	= app.onSocketMessage;
+		
+		webSocketService		= new WebSocketService(model, webSocket);
+	};
+	
 	// Constructor
 	(function(){
+		
 		canvas = aCanvas;
 		context = canvas.getContext('2d');
 		resizeCanvas();
@@ -250,12 +267,5 @@ var App = function(aSettings, aCanvas) {
 		model.camera = new Camera(canvas, context, model.userTadpole.x, model.userTadpole.y);
 		
 		model.arrows = {};
-		
-		webSocket 				= new WebSocket( model.settings.socketServer );
-		webSocket.onopen 		= app.onSocketOpen;
-		webSocket.onclose		= app.onSocketClose;
-		webSocket.onmessage 	= app.onSocketMessage;
-		
-		webSocketService		= new WebSocketService(model, webSocket);
 	})();
 }
