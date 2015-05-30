@@ -114,7 +114,8 @@ var Tadpole = function() {
 		var opacity = Math.max(Math.min(20 / Math.max(tadpole.timeSinceLastServerUpdate-300,1),1),.2).toFixed(3);
 
 		if(tadpole.hover && isAuthorized()) {
-			context.fillStyle = 'rgba(192, 253, 247,'+opacity+')';
+			//context.fillStyle = 'rgba(192, 253, 247,'+opacity+')';
+			context.fillStyle = 'rgba(237, 62, 209,'+opacity+')';
 			// context.shadowColor   = 'rgba(249, 136, 119, '+opacity*0.7+')';
 		}
 		else {
