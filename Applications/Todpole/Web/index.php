@@ -87,7 +87,7 @@ if(!function_exists('is_mobile'))
 			</section>
 			</aside>
 			<?php }?>
-            <aside id="frogMode">
+<!--            <aside id="frogMode">
                 <h3>Frog Mode</h3>
                 <section id="tadpoles">
                     <h4>Tadpoles</h4>
@@ -97,7 +97,7 @@ if(!function_exists('is_mobile'))
                 <section id="console">
                     <h4>Console</h4>
                 </section>
-            </aside>
+            </aside>-->
 		
 			<div id="cant-connect">
 				与服务器断开连接了。您可以重新刷新页面。
