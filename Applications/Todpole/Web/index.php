@@ -48,7 +48,7 @@ if(!function_exists('is_mobile'))
 			<h1>Game</h1>
 		<?php if(!is_mobile()){?>
 			<div id="instructions">
-				<h2>介绍</h2>
+				<h2>玩法介绍</h2>
 				<p>直接打字聊天!<br />输入 name: XX 则会设置你的昵称为XX</p>
 			</div>
 			<aside id="info">
@@ -114,10 +114,7 @@ if(!function_exists('is_mobile'))
 		
 		<script src="/js/Cookie.js"></script>
 		<script src="/js/main.js"></script>
-<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5fedb3bdce89499492c079ab4a8a0323' type='text/javascript'%3E%3C/script%3E"));
-</script>
+
 		
 	</body>
 </html>
