@@ -1,15 +1,6 @@
-2015-05-30 05:34:07 Workerman[start.php] start
-2015-05-30 13:31:08 Workerman[start.php] start
-2015-05-30 14:33:18 Workerman[start.php] sstart
-2015-05-30 14:33:18 Workerman[start.php] not run
-2015-05-30 14:33:25 Workerman[start.php] start
-2015-05-31 00:59:19 Workerman[start.php] start
-2015-05-31 05:08:20 Workerman[start.php] start-d
-2015-05-31 05:08:20 Workerman[start.php] not run
-2015-05-31 05:08:23 Workerman[start.php] start
-2015-05-31 05:18:40 Workerman[start.php] stop
-2015-05-31 05:18:40 Workerman[start.php] is stoping ...
-2015-05-31 05:18:40 Workerman[start.php] Stopping ...
-2015-05-31 05:18:40 Workerman[start.php] has been stopped
-2015-05-31 05:18:40 Workerman[start.php] stop success
-2015-05-31 05:18:42 Workerman[start.php] start
+2015-05-31 05:27:36 Workerman[start.php] stop
+2015-05-31 05:27:36 Workerman[start.php] is stoping ...
+2015-05-31 05:27:36 Workerman[start.php] Stopping ...
+2015-05-31 05:27:36 Workerman[start.php] has been stopped
+2015-05-31 05:27:36 Workerman[start.php] stop success
+2015-05-31 05:27:45 Workerman[start.php] start

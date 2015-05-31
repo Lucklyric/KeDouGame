@@ -25,7 +25,7 @@ if(!function_exists('is_mobile'))
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>摇一聊</title>
+		<title>游游</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="../bootstrap-3.3.4-dist/css/bootstrap.min.css">
