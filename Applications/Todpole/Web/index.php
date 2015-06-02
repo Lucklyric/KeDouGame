@@ -40,7 +40,7 @@ if(!function_exists('is_mobile'))
 	</head>
 	<body>
 		<!-- Modal -->
-<div id="myModal" tabindex="-1" class="modal fade" role="dialog">
+<div id="myModal" tabindex="-1" class="modal hide" role="dialog">
   <div class="modal-dialog modal-sm">
 
     <!-- Modal content-->
