@@ -39,12 +39,7 @@ if(!function_exists('is_mobile'))
 		<link rel="image_src" href="/images/fb-image.jpg" / >
 	</head>
 	<body>
-
-		
-		<canvas id="canvas"></canvas>
-		
-		<div id="ui">
-					<!-- Modal -->
+		<!-- Modal -->
 <div id="myModal" tabindex="-1" class="modal fade" role="dialog" style="cursor: pointer">
 	<div class="modal-dialog modal-sm">
     	<!-- Modal content-->
@@ -64,13 +59,17 @@ if(!function_exists('is_mobile'))
 				</div>
 					<label class="radio-inline"><input checked id = "rMale" value="rMale"type="radio" name="sex">男生</label>
 					<label class="radio-inline"><input id = "rFemale" value="rFemale"type="radio" name="sex">女生</label>
-      		</div>
-      		<div class="modal-footer">
-        		<button type="button" class="btn btn-default" data-dismiss="modal" id="welcomConfirm">确认</button>
-      		</div>
-    	</div>	
-	</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="welcomConfirm">确认</button>
+      </div>
+    </div>	
 </div>
+</div>
+		
+		<canvas id="canvas"></canvas>
+		
+		<div id="ui">
 			<div id="fps"></div>
 		
 			<input id="chat" type="text" />
@@ -119,13 +118,13 @@ if(!function_exists('is_mobile'))
 			
 		</div>
 		
-<!--		<script src="/js/lib/parseUri.js"></script> 
-		<script src="/js/lib/modernizr-1.5.min.js"></script>-->
+		<script src="/js/lib/parseUri.js"></script> 
+		<script src="/js/lib/modernizr-1.5.min.js"></script>
 		<script src="/js/jquery.min.js"></script>
-<!--		<script src="/js/lib/Stats.js"></script>-->
+		<script src="/js/lib/Stats.js"></script>
 		<script src="../bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
 		
-<!--		<script src="/js/App.js"></script>
+		<script src="/js/App.js"></script>
 		<script src="/js/Model.js"></script>
 		<script src="/js/Settings.js"></script>	
 		<script src="/js/Keys.js"></script>
@@ -141,10 +140,8 @@ if(!function_exists('is_mobile'))
 		<script src="/js/formControls.js"></script>
 		
 		<script src="/js/Cookie.js"></script>
-		<script src="/js/main.js"></script>-->
+		<script src="/js/main.js"></script>
 
-		<script>
-			$('#myModal').modal('show');
-		</script>
+		
 	</body>
 </html>
