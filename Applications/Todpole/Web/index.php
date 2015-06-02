@@ -39,39 +39,38 @@ if(!function_exists('is_mobile'))
 		<link rel="image_src" href="/images/fb-image.jpg" / >
 	</head>
 	<body>
-		<!-- Modal -->
-<div id="myModal" tabindex="-1" class="modal fade" role="dialog" style="cursor: pointer">
-  <div class="modal-dialog modal-sm">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">欢迎</h4>
-      </div>
-      <div class="modal-body">
-<div >
-				<h2>玩法介绍</h2>
-				<p>直接打字聊天!<br />
-			</div>
-        <div class="form-group">
-  <label for="usr">昵称:</label>
-  <input type="text" class="form-control" id="nickName">
-</div>
-		<label class="radio-inline"><input checked id = "rMale" value="rMale"type="radio" name="sex">男生</label>
-		<label class="radio-inline"><input id = "rFemale" value="rFemale"type="radio" name="sex">女生</label>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" id="welcomConfirm">确认</button>
-      </div>
-    </div>
-
-  </div>
-</div>
 		
 		<canvas id="canvas"></canvas>
 		
 		<div id="ui">
+					<!-- Modal -->
+<div id="myModal" tabindex="-1" class="modal fade" role="dialog" style="cursor: pointer">
+	<div class="modal-dialog modal-sm">
+    	<!-- Modal content-->
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+        		<h4 class="modal-title">欢迎</h4>
+      		</div>
+      		<div class="modal-body">
+				<div >
+					<h2>玩法介绍</h2>
+					<p>直接打字聊天!<br />
+				</div>
+        		<div class="form-group">
+  					<label for="usr">昵称:</label>
+  					<input type="text" class="form-control" id="nickName">
+				</div>
+					<label class="radio-inline"><input checked id = "rMale" value="rMale"type="radio" name="sex">男生</label>
+					<label class="radio-inline"><input id = "rFemale" value="rFemale"type="radio" name="sex">女生</label>
+      		</div>
+      		<div class="modal-footer">
+        		<button type="button" class="btn btn-default" data-dismiss="modal" id="welcomConfirm">确认</button>
+      		</div>
+    	</div>	
+	</div>
+</div>
 			<div id="fps"></div>
 		
 			<input id="chat" type="text" />
