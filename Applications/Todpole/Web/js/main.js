@@ -25,14 +25,6 @@ var welcomModal = function(){
 				app.setUserSex(1);
 			}
         });
-	runLoop();
-}
-
-
-var initApp = function() {
-	if (app!=null) { return; }
-	app = new App(settings, document.getElementById('canvas'));
-		
 	window.addEventListener('resize', app.resize, false);
 
 	document.addEventListener('mousemove', 		app.mousemove, false);
@@ -46,6 +38,15 @@ var initApp = function() {
 
 	document.addEventListener('keydown',    app.keydown, false);
 	document.addEventListener('keyup',    app.keyup, false);
+	runLoop();
+}
+
+
+var initApp = function() {
+	if (app!=null) { return; }
+	app = new App(settings, document.getElementById('canvas'));
+		
+
 	welcomModal();
 	//
 }
