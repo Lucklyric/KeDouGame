@@ -119,13 +119,13 @@ if(!function_exists('is_mobile'))
 			
 		</div>
 		
-		<script src="/js/lib/parseUri.js"></script> 
-		<script src="/js/lib/modernizr-1.5.min.js"></script>
+<!--		<script src="/js/lib/parseUri.js"></script> 
+		<script src="/js/lib/modernizr-1.5.min.js"></script>-->
 		<script src="/js/jquery.min.js"></script>
-		<script src="/js/lib/Stats.js"></script>
+<!--		<script src="/js/lib/Stats.js"></script>-->
 		<script src="../bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
 		
-		<script src="/js/App.js"></script>
+<!--		<script src="/js/App.js"></script>
 		<script src="/js/Model.js"></script>
 		<script src="/js/Settings.js"></script>	
 		<script src="/js/Keys.js"></script>
@@ -141,8 +141,10 @@ if(!function_exists('is_mobile'))
 		<script src="/js/formControls.js"></script>
 		
 		<script src="/js/Cookie.js"></script>
-		<script src="/js/main.js"></script>
+		<script src="/js/main.js"></script>-->
 
-		
+		<script>
+			$('#myModal').modal('show');
+		</script>
 	</body>
 </html>
